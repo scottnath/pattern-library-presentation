@@ -1,0 +1,78 @@
+<h2 class="title title-short"><img src="images/angularjs-logo.png"> Modularity Example: Form Element</h2>
+
+<div class="split-container">
+  <div class="split-two">
+    <h3><span>The Smallest Piece:</span><br> A Single Form Element</h3>
+  </div>
+  <div class="split-two split-two-image">
+    <img src="images/lego-brick-2x4-red.png" style="height: 3em;">
+  </div>
+</div>
+
+<div class="split-container">
+  <hr>
+  <div class="split-two">
+  <br>
+    <form name="myForm2">
+      <label for="sso">SSO ID</label><br>
+      <input type="text" id="sso" name="sso" minlength="9"
+        maxlength="9" ng-model="data.sso"
+        pattern="^[0-9]*$" placeholder="Type SSO"
+        ng-init="data.sso='206123456'" required />
+      <div ng-messages="myForm2.sso.$error" style="color:maroon">
+        <div ng-message="pattern">Only Numbers in SSO</div>
+        <div ng-message="minlength">SSO is 9 letters</div>
+        <div ng-message="maxlength">SSO is 9 letters</div>
+        <div ng-message="required">SSO required</div>
+      </div>
+    </form>
+  </div>
+  <div class="split-two">
+    <pre><code data-trim class="html enbiggen">
+&lt;label for="sso">SSO ID&lt;/label>
+&lt;input type="text" id="sso" name="sso" minlength="9"
+ maxlength="9" ng-model="data.sso"
+ pattern="^[0-9]*$" placeholder="Type SSO"
+ ng-init="data.sso='206123456'" required />
+&lt;div ng-messages="myForm2.sso.$error">
+  &lt;div ng-message="pattern">Only Numbers in SSO&lt;/div>
+  &lt;div ng-message="minlength">SSO is 9 letters&lt;/div>
+  &lt;div ng-message="maxlength">SSO is 9 letters&lt;/div>
+  &lt;div ng-message="required">SSO required&lt;/div>
+&lt;/div>
+    </code></pre>
+  </div>
+</div>
+
+<div class="split-container fragment">
+  <hr>
+    <h3><span>Make it a pattern then...</span> reuse it <em>everywhere</em></h3>
+  <div class="split-two">
+    <ol>
+      <li>Pattern -> AngularJS directive</li>
+      <li>Add to our Pattern Library</li>
+      <li>Import, use with <em>any</em> project</li>
+    </ol>
+  </div>
+  <div class="split-two">
+    <pre><code class="html huge">
+
+<sso-text-input></sso-text-input>
+
+    </code></pre>
+  </div>
+</div>
+
+<aside class="notes" data-markdown>
+* EXAMPLE SHOWS ALL THE CODE!
+    * Maybe show atlas-presentation.js
+* other elements: usernames/passwords/WYSIWYG
+* not just forms: single-image-grouping (borealis), ??
+
+**New in Angular 1.3!**
+
+* HTML5 validation attr: *minlength, maxlength, required*
+* Support for HTML5 element types: *email, number, date*
+* Errors built right in
+* NATIVE = WRITING CORRECT HTML
+</aside>

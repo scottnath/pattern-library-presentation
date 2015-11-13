@@ -1,0 +1,43 @@
+<h2 class="title">What is a pattern?</h2>
+<h3>Lil' pattern: SSO login ... now with Angular!</h3>
+<div class="split-container">
+  <div class="split-two">
+  <br>
+    <form name="myForm2">
+      <div class="form__element">
+        <label for="sso">SSO ID</label><br>
+        <input type="text" id="sso" name="sso" minlength="9"
+          maxlength="9" ng-model="data.sso"
+          pattern="^[0-9]*$" placeholder="Type SSO"
+          ng-init="data.sso='206123456'" required />
+        <div ng-messages="myForm2.sso.$error" style="color:maroon">
+          <div ng-message="pattern">Only Numbers in SSO</div>
+          <div ng-message="minlength">SSO is 9 letters</div>
+          <div ng-message="maxlength">SSO is 9 letters</div>
+          <div ng-message="required">SSO required</div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="split-two">
+    <pre><code data-trim class="html enbiggen">
+&lt;div class="form__element">
+  &lt;label for="sso">SSO ID&lt;/label>
+  &lt;input type="text" id="sso" name="sso" minlength="9"
+   maxlength="9" ng-model="data.sso"
+   pattern="^[0-9]*$" placeholder="Type SSO"
+   ng-init="data.sso='206123456'" required />
+  &lt;div ng-messages="myForm2.sso.$error">
+    &lt;div ng-message="pattern">Only Numbers in SSO&lt;/div>
+    &lt;div ng-message="minlength">SSO is 9 letters&lt;/div>
+    &lt;div ng-message="maxlength">SSO is 9 letters&lt;/div>
+    &lt;div ng-message="required">SSO required&lt;/div>
+  &lt;/div>
+&lt;/div>  
+    </code></pre>
+  </div>
+</div>
+<div class="split-container fragment">
+  <hr>
+  <h3><span>Now, that shit is </span>fancy</h3>
+</div>

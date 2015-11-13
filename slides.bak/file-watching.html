@@ -1,0 +1,22 @@
+<h2 class="title"><img src="images/atlas-logos/atlas-backwards.png"> File Watching</h2>
+
+<div class="clearfix">
+  <div class="split-two">
+    <p>Gulp watches our files for changes.</p>
+    <p>We can choose specific files, or whole groups with wildcards</p>
+    <br>
+    <pre><code data-trim>
+    scripts: [ // Application javascripts
+      '!app/docs/**', // ignore documentation in app
+      '!app/bower_components/**', // ignore bower-ingested scripts
+      '!app/**/*_test.js', // ignore our test scripts
+      '!app/scripts/templates.js', // template script
+      '!app/_gulp/**', // ignore all files in _gulp directory
+      'app/**/*.js'], // main application file
+    </code></pre>
+  </div>
+
+  <div class="split-two split-two-image">
+    <img src="images/folders-red-xs.png" style="height: 14em;">
+  </div>
+</div>

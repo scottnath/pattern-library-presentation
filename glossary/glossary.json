@@ -1,0 +1,58 @@
+[
+  {
+    "term": "TaskRunner",
+    "definition": "MOAR PLEASE: like Jenkins for local,"
+  },
+  {
+    "term": "CRUD",
+    "definition": "create, read, update and delete"
+  },
+  {
+    "term": "Custom HTML Elements",
+    "definition": "Javascript-created, non-standard HTML elements. Act like any normal DOM element to the browser.",
+    "code": "<my-cool-element></my-cool-element>"
+  },
+  {
+    "term": "Two-Way Data Binding",
+    "definition": "In the MVC model for AngularJS, changes to the view are immediately reflected in the model, and vise versa.",
+    "image": "/images/angularjs-Two_Way_Data_Binding.png"
+  },
+  {
+    "term": "Dependency Injection",
+    "definition": "Passing a software dependency (a service) to a dependent object (a client). In AngularJS, this means our app can use and share values and functionality across it's own components as well as use external modules/apps/etc",
+    "links": [
+      {
+        "title": "AngularJS DI",
+        "url": "https://docs.angularjs.org/guide/di"
+      }
+    ]
+  },
+  {
+    "term": "Testability in AngularJS",
+    "definition": "Unit testing in AngularJS is eaiser due to dependency injection allowing the test to pull in a component's dependencies resulting in easier mocking up of the original component without digging into global variables."
+  },
+  {
+    "term": "Package Manager",
+    "definition": "Manages packages. Installs, updrades, configures, and removes software as well as managing dependencies of that software."
+  },
+  {
+    "term": "TaskRunner",
+    "definition": "XXXXXXXXXX"
+  },
+  {
+    "term": "TaskRunner",
+    "definition": "XXXXXXXXXX"
+  },
+  {
+    "term": "TaskRunner",
+    "definition": "XXXXXXXXXX"
+  },
+  {
+    "term": "TaskRunner",
+    "definition": "XXXXXXXXXX"
+  },
+  {
+    "term": "TaskRunner",
+    "definition": "XXXXXXXXXX"
+  }
+]

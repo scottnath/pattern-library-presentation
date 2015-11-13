@@ -1,0 +1,57 @@
+<h2 class="title"><img src="images/atlas-logos/atlas-backwards.png"> Linting</h2>
+
+<div class="clearfix">
+  <div class="split-two">
+    <h3>What is linting?</h3>
+    <ol>
+      <li>Inspects Code</li>
+      <li>Finds common mistakes</li>
+      <li>Exports results to console</li>
+      <li>Callbacks allow actions</li>
+    </ol>
+  </div>
+  <div class="split-two">
+    <pre><code data-trim>
+...
+"no-undef": 1,
+"no-new": 1,
+"no-extra-semi": 1,
+"no-debugger": 2,
+"no-caller": 1,
+"semi": 1,
+"quotes": [1, "single"], // single quotes ONLY
+"no-unreachable":2,
+...
+    </code></pre>
+  </div>
+</div>
+<div class="clearfix">
+  <pre class="fragment roll-in"><code data-trim class="javascript">
+$scope.scopedObject = [
+  {
+    'key': "bravo", // BAD: using double quotes
+    'title': 'Bravo TV: Watch What Happens',
+    'url': 'http://bravotv.com',
+    'description': 'The Real Housewives of New York City, The Singles Project ...',
+    'an array': ['arrayItem1','arrayItem2','arrayItem1'],
+    'an object': {'objectKey1':'objectValue1','objectKey2':'objectValue2'}
+  },
+  ...
+  </code></pre>
+  <pre class="fragment roll-in"><code data-trim class="bash">
+...
+[12:41:01] Starting 'dev:eslint'...
+-------------------------------------------------- DEVELOPMENT: ESLint Javascript Linting
+[12:41:01] gulp-inject 22 files into index.html.
+[BS] 1 file changed (index.html)
+[12:41:01] Finished 'dev:js:globbing' after 122 ms
+[12:41:01]
+/Users/scottnath/development/gitrepos/atlas-proposed/app/object-viewer/object-viewer-controller.js
+  16:15  warning  Strings must use singlequote  quotes
+
+✖ 1 problem
+
+[BS] 1 file changed (object-viewer-controller.js)
+...
+    </code></pre>
+</div>

@@ -1,0 +1,35 @@
+<h2 class="title"><img src="images/atlas-logos/atlas-backwards.png"> Globbing...um...what?</h2>
+
+<h3>What is globbing?</h3>
+<ol>
+  <li>Looks through directories for a given file type</li>
+  <li>Compiles a list of all matching files</li>
+  <li>Writes that list to a file</li>
+</ol>
+
+<div class="clearfix">
+<br>
+  <div class="fragment roll-in split-two">
+    <pre><code data-trim>
+// cssGlobbingBegin
+// found .scss files @import-ed here
+// cssGlobbingEnd
+    </code></pre>
+  </div>
+
+  <div class="fragment roll-in split-two">
+    <pre><code data-trim>
+// cssGlobbingBegin
+@import '../components/directive-example/_directive-example.scss';
+@import '../components/gallery/_gallery.scss';
+@import '../components/login-form/_login-form.scss';
+@import '../components/show/_show.scss';
+@import '../content-item/_content-item.scss';
+@import '../content-type/_content-type.scss';
+@import '../login/_login.scss';
+@import '../main/_main.scss';
+@import '../object-viewer/_object-viewer.scss';
+// cssGlobbingEnd
+    </code></pre>
+  </div>
+</div>

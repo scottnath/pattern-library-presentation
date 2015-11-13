@@ -1,0 +1,43 @@
+[
+    "atlas.html",
+    "a-tale-of-two-systems.html",
+    [
+        "angularjs-application.html",
+        "angularjs-what-is-it.html",
+        "angularjs-folder-structure.html",
+        "angular-app-modularity.html",
+        "angular-app-modularity-example.html",
+        "angular-app-modularity-external.html",
+        "angular-app-modularity-form-element.html",
+        "angular-app-modularity-form-complete.html",
+        "angular-app-modularity-whole-page.html",
+        "angular-app-modularity-patterns.html",
+        "angular-application-sum-up.html"
+    ],
+    [
+        "atlas-development-environment.html",
+        "atlas-what-it-does.html",
+        "package-managers-one-sheet.html",
+        "package-managers-list.html",
+        "the-taskrunner.html",
+        "http-server.html",
+        "file-watching.html",
+        "globwhat.html",
+        "lintingwhat.html",
+        "javascript.html",
+        "compass-conversion.html",
+        "compass-flowchart.html"
+    ],
+    [
+        "distribution.html",
+        "distribution-build.html",
+        "distribution-flowchart.html",
+        "build-deployment.html"
+    ],
+    "atlas-sum-up.html",
+    "tasks-complete.html",
+    "tasks-todo.html",
+    "action.html",
+    "atlas.html"
+
+]

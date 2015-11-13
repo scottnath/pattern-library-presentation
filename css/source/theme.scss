@@ -1,0 +1,78 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+// This file has been copied over from
+// ../../bower_components/reveal.js/css/theme/source/default.scss
+
+// Default mixins and settings -----------------
+@import "template/mixins";
+@import "template/settings";
+@import "template/theme";
+// ---------------------------------------------
+
+// Include theme-specific fonts ----------------
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+// ---------------------------------------------
+
+// Override theme settings ---------------------
+// $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+// Other options include e.g.
+// $mainFont: 'Open Sans', sans-serif;
+// $linkColor: #ed1dff;
+// $linkColorHover: $linkColor;
+// $headingFont: 'Montserrat', Impact, sans-serif;
+// $headingTextShadow: none;
+ $headingLetterSpacing: 0.04em;
+// $headingTextTransform: none;
+// $selectionBackgroundColor: #e0ad52;
+// $mainFontSize: 30px;
+// See ../../bower_components/reveal.js/css/theme/template/settings.scss for the full list.
+// ---------------------------------------------
+
+// Background generator ------------------------
+@mixin bodyBackground() {
+  background-color:$backgroundColor;
+}
+// ---------------------------------------------
+
+// Theme template ------------------------------
+//@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+.reveal .section--home{
+  text-align: center;
+}
+.reveal .title--ORGANIZATION{
+  background: url('../images/ots_TechnologyRGB.png') no-repeat center;
+  height: 86px;
+  text-indent: -9999px;
+  display: block;
+  padding-bottom: 3em;
+  @include page-title();
+}
+
+.reveal .present {
+  text-align: left;
+}
+
+.reveal img {
+  box-shadow: none !important;
+  border: none !important;
+}
+.reveal ol, .reveal ul {
+  margin-left: 1.4em;
+}
+.reveal .present {
+  padding-top: 0;
+  margin-top: -2em;
+}
+
+
+// .reveal h2 {
+//   padding-bottom: 0.1em;
+//   margin-bottom: 1.25em;
+//   border-bottom: 3px solid lighten($linkColor, 20%);
+// }
